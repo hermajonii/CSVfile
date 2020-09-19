@@ -63,15 +63,15 @@ CREATE TABLE `manufacturers` (
 
 CREATE TABLE `products` (
   `idProduct` int(11) NOT NULL,
-  `model_number` varchar(20) DEFAULT NULL,
-  `upc` varchar(10) DEFAULT NULL,
-  `sku` varchar(10) DEFAULT NULL,
-  `regular_price` float(10,2) DEFAULT NULL,
-  `sale_price` float(10,2) DEFAULT NULL,
-  `description` text DEFAULT NULL,
-  `url` varchar(200) DEFAULT NULL,
+  `model_number` varchar(20) NOT NULL,
+  `upc` varchar(10) NOT NULL,
+  `sku` varchar(10) NOT NULL,
+  `regular_price` float(10,2) NOT NULL,
+  `sale_price` float(10,2) NOT NULL,
+  `description` text NOT NULL,
+  `url` varchar(200) NOT NULL,
   `idCategory` int(11) DEFAULT NULL,
-  `idManufacturer` int(11) DEFAULT NULL
+  `idManufacturer` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
